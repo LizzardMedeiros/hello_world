@@ -1,0 +1,35 @@
+#include "auxiliar.h"
+A ICON MOVEABLE PURE LOADONCALL DISCARDABLE "Controle.ico"
+555 MENU 
+BEGIN
+	POPUP "&Arquivo"
+	BEGIN
+		POPUP "Novo" 
+        BEGIN
+             MENUITEM "Controle\tCtrl+N", NOVO
+        END
+		MENUITEM "Abrir...", ABRIR
+		MENUITEM "Salvar", SALVAR
+		MENUITEM "Salvar Como...", SALVAR_COMO
+		MENUITEM SEPARATOR
+		MENUITEM "Imprimir", IMPRIMIR
+		MENUITEM "Configurar Página", CONFIGURAR_PAGINA
+		MENUITEM "Configurar Impressão", CONFIGURAR_IMPRESSAO
+		MENUITEM SEPARATOR
+		MENUITEM "Sair", SAIR
+	END
+
+	POPUP "Editar"
+	BEGIN
+		MENUITEM "Voltar", VOLTAR
+		MENUITEM SEPARATOR
+		MENUITEM "Recortar", CORTAR
+		MENUITEM "Copiar", COPIAR
+		MENUITEM "Colar", COLAR
+	END
+
+	POPUP "Ajuda"
+	BEGIN
+		MENUITEM "Sobre", SOBRE
+	END
+END
